@@ -1,3 +1,50 @@
 @import url(variables.css);
 
 @import url(reset.css);
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--color-primary);
+}
+aside{
+    padding: 2rem;
+    color: var(--color-blanco);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.texto-footer {
+    color: var(--color-main-light);
+    font-size: .85rem;
+}
+main{
+    background-color: var(--color-blanco);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+.titulo-principal {
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+.contenedor-producto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.producto-imagen{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+.productos-detalles{
+    background-color: var(--color-primary);
+}
