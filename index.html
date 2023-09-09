@@ -21,19 +21,19 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <button class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i>Todos los productos</button>
+                        <button id="todos" class="boton-menu botones-categoria active"><i class="bi bi-hand-index-thumb-fill"></i>Todos los productos</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Almacen</button>
+                        <button id="abrigos" class="boton-menu botones-categoria"><i class="bi bi-hand-index-thumb"></i>Almacen</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Carniceria</button>
+                        <button id="camisetas" class="boton-menu botones-categoria"><i class="bi bi-hand-index-thumb"></i>Carniceria</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Heladeria</button>
+                        <button id="pantalones" class="boton-menu botones-categoria"><i class="bi bi-hand-index-thumb"></i>Heladeria</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-carrito" href="carrito.html"><a href="carrito.html"><i><i class="bi bi-cart-fill"></i>Carrito<span span class="numerito">0</span></span></a></button>
+                        <button class="boton-menu boton-carrito" href="carrito.html"><a href="carrito.html"><i><i class="bi bi-cart-fill"></i>Carrito<span span class="numerito" id="numerito">0</span></span></a></button>
                     </li>
                 </ul>
             </nav>
@@ -43,40 +43,9 @@
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal">Todos los productos</h2>
-            <div class="contenedor-productos">
-                <div class="producto">
-                    <img src="assets/img/empanada.PNG" alt="empanada" class="producto-imagen">
-                    <div class="productos-detalles">
-                        <h3 class="producto-titulo">Empanada 01</h3>
-                        <p class="produco-precio">$1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="assets/img/Sandwich de mila.jpeg" alt="mila" class="producto-imagen">
-                    <div class="productos-detalles">
-                        <h3 class="producto-titulo">Sandwich de mila 02</h3>
-                        <p class="produco-precio">$1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="assets/img/lomito.jpg" alt="Lomito" class="producto-imagen">
-                    <div class="productos-detalles">
-                        <h3 class="producto-titulo">Lomito 03</h3>
-                        <p class="produco-precio">$1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img src="assets/img/pizza.PNG" alt="pizza" class="producto-imagen">
-                    <div class="productos-detalles">
-                        <h3 class="producto-titulo">pizza 04</h3>
-                        <p class="produco-precio">$1000</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS-->
             </div>
         </main>
     </div>
