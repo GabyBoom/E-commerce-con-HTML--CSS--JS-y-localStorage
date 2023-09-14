@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-------------------Bootstrap---------------->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-------------------favicon----------------->
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <!-------------------CSS--------------------->
+    <title>GabyShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
     <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">GabyShop</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
         <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
             <header>
-                <h1 class="logo">DonPlacido</h1>
+                <h1 class="logo">GabyShop</h1>
             </header>
             <nav>
                 <ul>
                     <li>
-                       <a class="boton-menu boton-volver" href="index.html">
-                           <i class="bi bi-arrow-return-left"></i> Seguir Comprando
-                       </a>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            <i class="bi bi-arrow-return-left"></i> Seguir comprando
+                        </a>
                     </li>
                     <li>
-                       <a class="boton-menu boton-carrito active" href="carrito.html">
-                           <i class="bi bi-cart-fill"></i> Carrito
-                       </a>
+                        <a class="boton-menu boton-carrito active" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -38,68 +47,33 @@
         <main>
             <h2 class="titulo-principal">Carrito</h2>
             <div class="contenedor-carrito">
-                <p class="carrito-vacio">Tu carrito está vacío <i class="bi bi-emoji-frown"></i></p>
-                <div class="carrito-productos disabled">
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" src="assets/img/empanada.PNG" alt="empanada">
-                        <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Abrigo 01</h3>
-                        </div>
-                        <div class="carrito-procucto-cantidad">
-                            <small>Cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$1000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$1000</p>
-                        </div>
-                        <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
-                    </div>
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" src="assets/img/Sandwich de mila.jpeg" alt="Mila">
-                        <div class="carrito-producto-titulo">
-                            <small>Titulo</small>
-                            <h3>Abrigo 02</h3>
-                        </div>
-                        <div class="carrito-procucto-cantidad">
-                            <small>Cantidad</small>
-                            <p>2</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$1000</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$2000</p>
-                        </div>
-                        <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
-                    </div>
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
 
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- Esto se va a completar con el JS -->
                 </div>
-                <div class="carrito-acciones disabled">
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
-                        <button class="carrito-acciones-vaciar">Vaciar Carrito</button>
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
                     </div>
                     <div class="carrito-acciones-derecha">
                         <div class="carrito-acciones-total">
-                            <p>Total</p>
+                            <p>Total:</p>
                             <p id="total">$3000</p>
                         </div>
-                        <button class="carrito-acciones-comprar">Comprar Ahora</button>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
                     </div>
                 </div>
-                <p class="carrito-comprado disabled">Muchas gracias por tu compra.<i class="bi bi-emoji-laughing"></i></p>
+
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+
             </div>
         </main>
     </div>
-
-
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/menu.js"></script>
 </body>
 </html>
